@@ -1,0 +1,22 @@
+dnd_ai_dm/
+  main.py                      # Run this to play
+  config.py                    # All settings in one place
+  requirements.txt             # pip install -r requirements.txt
+  memory/
+    world_state.py             # ChromaDB entity database
+    conversation_store.py      # Session persistence
+    relationship_graph.py      # All relationship tracking
+  agent/
+    web_search.py              # Free DuckDuckGo search
+    context_builder.py         # Dynamic prompt assembly
+    dm_agent.py                # Core DM engine
+  finetune/
+    video_processor.py         # YouTube/local video → transcripts
+    dataset_builder.py         # Transcripts → training pairs
+    trainer.py                 # LoRA fine-tuning
+  data/                        # Auto-created on first run
+    world/
+    conversations/
+    training/
+
+pip install -r requirements.txt

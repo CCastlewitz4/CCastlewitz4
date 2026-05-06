@@ -1,0 +1,115 @@
+# AI D&D Dungeon Master - Dependencies (Security-Audited Version)
+# This is the CORRECTED and SECURE version
+
+# ============================================================================
+# CORE DEPENDENCIES (Required for basic functionality)
+# ============================================================================
+
+# Core AI and API
+ollama>=0.3.0                    # Interface with Ollama for local LLM
+requests>=2.32.0                 # HTTP requests (2.32.0+ includes security patches)
+beautifulsoup4>=4.12.0          # Web scraping for search results
+lxml>=4.9.3                      # XML/HTML parsing (4.9.3+ includes XXE fixes)
+
+# Data Storage and Management
+# NOTE: sqlite3 is BUILT INTO Python - no separate installation needed!
+chromadb>=0.4.18                 # Vector database for semantic memory search
+sentence-transformers>=2.3.0    # Embeddings for memory retrieval
+
+# Data Processing
+pandas>=2.1.0                   # Data manipulation
+numpy>=1.24.0                   # Numerical operations
+jsonlines>=4.0.0                # JSONL format for training data
+
+# Utilities
+python-dotenv>=1.0.0            # Environment variables
+tqdm>=4.66.0                    # Progress bars
+pyyaml>=6.0.1                   # Configuration files (6.0+ uses safe_load by default)
+schedule>=1.2.0                 # Scheduled tasks for memory consolidation
+# requirements.txt
+# ─────────────────────────────────────────────────────────────────────────────
+# Install all dependencies with:
+#   python -m pip install -r requirements.txt
+#
+# NOTE: chromadb has been REMOVED. world_state.py now uses plain JSON files
+# + numpy for storage and semantic search, which fully supports Python 3.14.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Core AI / Local LLM ───────────────────────────────────────────────────
+ollama                    # Python client for the local Ollama server
+
+# ── Vector Search (replaces ChromaDB) ────────────────────────────────────
+sentence-transformers     # Converts text to vectors for semantic search
+numpy                     # Fast cosine similarity math for search ranking
+
+# ── Web Search ────────────────────────────────────────────────────────────
+duckduckgo-search         # Free, no-API-key web search via DuckDuckGo
+
+# ── Graph / Relationships ─────────────────────────────────────────────────
+networkx                  # Directed graph library for the relationship system
+
+# ── Terminal UI ───────────────────────────────────────────────────────────
+rich                      # Styled terminal output (colors, panels, tables)
+
+# ── Image Generation ─────────────────────────────────────────────────────── Image Generation (runs directly in Python, no web UI needed) ─────────
+Pillow                    # Saves generated images as PNG files
+diffusers                 # Hugging Face library that runs Stable Diffusion directly
+transformers              # Required by diffusers for the text encoder
+accelerate                # Speeds up diffusers on GPU, reduces VRAM usage
+
+Pillow                    # Decodes and saves images from Stable Diffusion API
+
+# ── Fine-Tuning (only needed for video fine-tuning feature) ───────────────
+openai-whisper            # Local speech-to-text transcription (no API key needed)
+yt-dlp                    # YouTube video downloader for audio extraction
+torch                     # PyTorch deep learning engine for fine-tuning
+transformers              # Hugging Face Transformers for model loading/training
+datasets                  # Hugging Face Datasets for training data management
+peft                      # Parameter-Efficient Fine-Tuning (LoRA)
+accelerate                # Mixed-precision training utilities
+
+
+# ============================================================================
+# OPTIONAL: Video/Audio Processing (Only install if doing fine-tuning)
+# ============================================================================
+# Uncomment these lines only when you're ready to process videos:
+
+# yt-dlp>=2024.1.0                # Download videos for processing
+# openai-whisper>=20231117        # Transcribe audio to text (requires PyTorch)
+# opencv-python>=4.9.0            # Video processing
+# moviepy>=1.0.3                  # Video editing and extraction
+
+# ============================================================================
+# OPTIONAL: Fine-tuning Support (Only install if doing model training)
+# ============================================================================
+# These are LARGE packages. Only install when needed:
+
+# datasets>=2.16.0                # Hugging Face datasets
+# transformers>=4.37.0            # Model training utilities
+# accelerate>=0.26.0              # Training optimization
+# peft>=0.8.0                     # Parameter-efficient fine-tuning (LoRA)
+# bitsandbytes>=0.42.0           # 4-bit quantization (requires CUDA on Windows)
+
+# ============================================================================
+# INSTALLATION INSTRUCTIONS
+# ============================================================================
+#
+# Minimal Install (Recommended to start):
+#   pip install -r requirements.txt
+#
+# With Video Processing:
+#   Uncomment video section above, then:
+#   pip install -r requirements.txt
+#
+# With Training Support:
+#   Uncomment training section above, then:
+#   pip install -r requirements.txt
+#
+# Security Audit:
+#   pip install pip-audit
+#   pip-audit
+#
+# Check for Updates:
+#   pip list --outdated
+#
+# ============================================================================

@@ -1,0 +1,135 @@
+{
+  "id": "player_character",
+  "system_id": "dnd_5e",
+  "name": "Raylan Orthal",
+  "race": "Half-Elf",
+  "class": "Warlock",
+  "subclass": "The Archfey",
+  "level": 1,
+  "age": 26,
+  "gender": "He/Him",
+  "alignment": "Neutral Good",
+  "appearance": "Raylan is a tall, slender but athletic build man with long black hair pulled into a manbun. he has a sharp jawline and a scar over his left eye. He has a tattoo of a viper running along his right arm",
+  "personality": "He shakes his leg often. He is willing to do whatever he can to achieve his goals, but he would rather punish the wicked to obtain it rather than risk innocents",
+  "backstory": "Raylan worked at a foundry with his family trying to make ends meet. disgruntled with the current power structure, he would constantly complain about the injustice and unequal distribution of wealth and resources. When his foundry explodes in one of the recent attacks, he loses his family and blames not the attackers as much as he blames the dynasty for allowing things to grow this out of hand. He makes a vow of vengeance and to topple the current power structure when a lord of the fey hears his wish and decides to grant him power. Now with these gifts, Raylan sets out on his journey to fulfill his ambition while trying to appease the lord of the fey that occasionally whispers to him",
+  "abilities": {
+    "STR": 9,
+    "DEX": 13,
+    "CON": 10,
+    "INT": 9,
+    "WIS": 13,
+    "CHA": 17
+  },
+  "hit_points": {
+    "current": 8,
+    "maximum": 8
+  },
+  "inventory": [
+    "Light crossbow + 20 bolts",
+    "Component pouch",
+    "Scholar's pack",
+    "Leather armor",
+    "Simple weapon",
+    "Two daggers",
+    "Artisan's tools (one type)",
+    "Letter of introduction from guild",
+    "Traveler's clothes",
+    "15 gp"
+  ],
+  "spells": [
+    "Eldritch Blast",
+    "Prestidigitation",
+    "Command",
+    "Comprehend Languages",
+    "Faerie Fire",
+    "Sleep"
+  ],
+  "spell_slots": {
+    "1": 1
+  },
+  "rumors": [
+    {
+      "text": "Raylan is an excellent chef",
+      "true": true
+    },
+    {
+      "text": "Raylan got arrested before because he beat up 5 men in an alley",
+      "true": false
+    }
+  ],
+  "background": "Guild Artisan",
+  "notes": "",
+  "starting_location_id": null,
+  "racial_traits": [
+    "Darkvision 60 ft.",
+    "Fey Ancestry: Advantage on saves vs charm; immune to magical sleep.",
+    "Skill Versatility: Gain proficiency in two skills of your choice.",
+    "Extra Language: Speak, read, and write one extra language.",
+    "Flexible ASI: +1 to two ability scores of your choice (in addition to +2 CHA)."
+  ],
+  "racial_proficiencies": [
+    "Two skills of your choice"
+  ],
+  "languages": [
+    "Common",
+    "Elvish",
+    "One additional language of your choice"
+  ],
+  "speed": 30,
+  "size": "Medium",
+  "darkvision": 60,
+  "saving_throw_proficiencies": [
+    "WIS",
+    "CHA"
+  ],
+  "armor_proficiencies": [
+    "Light Armor"
+  ],
+  "weapon_proficiencies": [
+    "Simple Weapons"
+  ],
+  "tool_proficiencies": [
+    "Artisan's Tools (one type)"
+  ],
+  "class_features": [
+    "Otherworldly Patron: Choose at level 1 (Archfey, Fiend, Great Old One, etc.).",
+    "Pact Magic (CHA-based): 2 cantrips, 2 spells known, ONE 1st-level slot — recharges on short rest."
+  ],
+  "skill_choices_available": [
+    "Arcana",
+    "Deception",
+    "History",
+    "Intimidation",
+    "Investigation",
+    "Nature",
+    "Religion"
+  ],
+  "skill_choices_count": 2,
+  "class_starting_equipment": [
+    "Light crossbow + 20 bolts OR simple weapon",
+    "Component pouch OR arcane focus",
+    "Scholar's pack OR Dungeoneer's pack",
+    "Leather armor",
+    "Simple weapon",
+    "Two daggers"
+  ],
+  "proficiency_bonus": 2,
+  "auto_applied_notes": [
+    "Racial ASI applied: +1 DEX, +2 WIS, +2 CHA",
+    "Warlock: proficiencies and features applied (wiki + built-in)."
+  ],
+  "all_skill_proficiencies": [
+    "Two skills of your choice",
+    "Insight",
+    "Persuasion",
+    "History",
+    "Deception"
+  ],
+  "bonus_languages": [
+    "Any language of your choice (×1)"
+  ],
+  "expertise_available": false,
+  "expertise_count": 0,
+  "search_summary": "Raylan Orthal is a Half-Elf Warlock. Raylan is a tall, slender but athletic build man with long black hair pulled into a manbun. he has a sharp jawline and a scar over his left eye. He has a tattoo of a viper running along his right arm He shakes his leg often. He is willing to do whatever he can to achieve his goals, but he would rather punish the wicked to obtain it rather than risk innocents Raylan worked at a foundry with his family trying to make ends meet. disgruntled with the current power structure, he would constantly complain about the injustice and unequal distribution of wealth and resources. When his foundry explodes in one of the recent attacks, he loses his family and blames not the attackers as much as he blames the dynasty for allowing things to grow this out of hand. He makes a vow of vengeance and to topple the current power structure when a lord of the fey hears his wish and decides to grant him power. Now with these gifts, Raylan sets out on his journey to fulfill his ambition while trying to appease the lord of the fey that occasionally whispers to him",
+  "last_updated": "2026-04-07T13:45:49.582032"
+}
